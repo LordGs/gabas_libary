@@ -17,8 +17,9 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 
 ### Endpoints
 #### Register
-**Payload:** `gabas_library/public/user/register`
-```{
+**Payload:** `/gabas_library/public/user/register`
+```
+{
   "username":"admin123",
   "password":"admin123"
 }
