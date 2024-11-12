@@ -18,10 +18,10 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 ### Endpoints
 <details>
 <summary>Register</summary>
-```
+`
 {
   "username":"lordvic",
   "password":"admin123"
 }
-```
+`
 </details>
