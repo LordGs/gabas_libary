@@ -16,7 +16,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 3. Authentication: JSON Web Tokens (JWT) with token rotation
 
 # Endpoints
-## Register
+## Register Users
 **Endpoint:** `/gabas_library/public/user/register`<br>
 **Payload:**
 ```
@@ -32,7 +32,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
   "data": null
 }
 ```
-## Authenticate
+## Authenticate Users
 **Endpoint:** `/gabas_library/public/user/authenticate`<br>
 **Payload:**
 ```
@@ -49,7 +49,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
   "data": null
 }
 ```
-## Insert
+## Insert Books with Author
 **Endpoint:** `/gabas_library/public/book/add`<br>
 **Payload:**
 ```
