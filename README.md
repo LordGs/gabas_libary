@@ -1,5 +1,20 @@
 # Library System with JWT
 A simple library system with secure access management using JSON Web Tokens (JWT). This project allows users to manage a collection of books and authors while ensuring security through token rotation, so each token is single-use only.
+
+# Table of Contents
+
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Endpoints, Payloads, and Responses](#endpoints-payloads-and-responses)  
+   - [Register Users](#register-users)  
+   - [Authenticate Users](#authenticate-users)  
+   - [Insert Books with Author](#insert-books-with-author)  
+   - [Update Books with Author](#update-books-with-author)  
+   - [Display Books with Author](#display-books-with-author)  
+   - [Delete Books and Authors](#delete-books-and-authors)
+4. [How to Use](#how-to-use)
+
+
 ## Features
 1. **User Registration:** Create an account to access the library system.
 2. **Token-Based Authentication:** Authenticate to obtain a unique JWT for secure database operations.
