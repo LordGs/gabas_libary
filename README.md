@@ -17,7 +17,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 
 # Endpoints, Payloads, and Response
 ## Register Users
-**Endpoint:** `/gabas_library/public/user/register`<br>
+**Endpoint: POST** `/gabas_library/public/user/register`<br>
 **Payload:**
 ```
 {
@@ -33,7 +33,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 }
 ```
 ## Authenticate Users
-**Endpoint:** `/gabas_library/public/user/authenticate`<br>
+**Endpoint: POST** `/gabas_library/public/user/authenticate`<br>
 **Payload:**
 ```
 {
@@ -50,12 +50,12 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 }
 ```
 ## Insert Books with Author
-**Endpoint:** `/gabas_library/public/book/add`<br>
+**Endpoint: POST** `/gabas_library/public/book/add`<br>
 **Payload:**
 ```
 {
-  "username":"admin123",
-  "password":"admin123"
+    "bookTitle": "sample bookname",
+    "authorName": "sample authorname"
 }
 ```
 **Response:**
@@ -63,6 +63,25 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 {
   "status": "success",
   "Message": "The book has been added to the collection",
+  "newToken": "<generated-token>"
+}
+```
+## Update Books with Author
+**Endpoint: POST** `/gabas_library/public/book/update`<br>
+**Payload:**
+```
+{
+    "bookId": 9,
+    "newBookTitle": "Update Bookname",
+    "newAuthorName": "Update AuthorName"
+}
+
+```
+**Response:**
+```
+{
+  "status": "success",
+  "Message": "The book has been updated",
   "newToken": "<generated-token>"
 }
 ```
