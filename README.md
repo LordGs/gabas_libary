@@ -15,8 +15,8 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 2. Database: MySQL
 3. Authentication: JSON Web Tokens (JWT) with token rotation
 
-### Endpoints
-#### Register
+## Endpoints
+### Register
 **Endpoint:** `/gabas_library/public/user/register`<br>
 **Payload:**
 ```
