@@ -49,3 +49,20 @@ A simple library system with secure access management using JSON Web Tokens (JWT
   "data": null
 }
 ```
+## Insert
+**Endpoint:** `/gabas_library/public/book/add`<br>
+**Payload:**
+```
+{
+  "username":"admin123",
+  "password":"admin123"
+}
+```
+**Response:**
+```
+{
+  "status": "success",
+  "Message": "The book has been added to the collection",
+  "newToken": "<generated-token>"
+}
+```
