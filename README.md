@@ -16,12 +16,12 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 3. Authentication: JSON Web Tokens (JWT) with token rotation
 
 ### Endpoints
-<details>
-<summary>Register</summary>
-`
+**Register**
+```
 {
-  "username":"lordvic",
-  "password":"admin123"
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
 }
-`
-</details>
+```
+
