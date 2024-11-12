@@ -86,7 +86,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 }
 ```
 ## Display Books with Author
-**Endpoint: PUT** `/gabas_library/public/book/collection`<br>
+**Endpoint: GET** `/gabas_library/public/book/collection`<br>
 **Payload:**
 ```
 {
@@ -109,7 +109,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 }
 ```
 ## Delete Books and Authors
-**Endpoint: PUT** `/gabas_library/public/book/delete`<br>
+**Endpoint: DEL** `/gabas_library/public/book/delete`<br>
 **Payload:**
 ```
 {
