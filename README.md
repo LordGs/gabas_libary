@@ -67,7 +67,7 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 }
 ```
 ## Update Books with Author
-**Endpoint: POST** `/gabas_library/public/book/update`<br>
+**Endpoint: PUT** `/gabas_library/public/book/update`<br>
 **Payload:**
 ```
 {
@@ -82,6 +82,45 @@ A simple library system with secure access management using JSON Web Tokens (JWT
 {
   "status": "success",
   "Message": "The book has been updated",
+  "newToken": "<generated-token>"
+}
+```
+## Display Books with Author
+**Endpoint: PUT** `/gabas_library/public/book/collection`<br>
+**Payload:**
+```
+{
+    "collectionId": "16"
+}
+```
+**Response:**
+```
+{
+  "status": "success",
+  "data": [
+    {
+      "bookid": 16,
+      "book_title": "sample bookname",
+      "authorid": 16,
+      "author_name": "sample authorname"
+    }
+  ],
+  "newToken": "<generated-token>"
+}
+```
+## Delete Books and Authors
+**Endpoint: PUT** `/gabas_library/public/book/delete`<br>
+**Payload:**
+```
+{
+    "collectionId": 16
+}
+```
+**Response:**
+```
+{
+  "status": "success",
+  "message": "Entry and related book/author deleted successfully.",
   "newToken": "<generated-token>"
 }
 ```
